@@ -1,0 +1,119 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #efeff4;
+    -webkit-overflow-scrolling: touch;
+}
+.list-goods{
+    background-color: #fff;
+    height: 160px;
+    margin-top: 10px;
+    overflow: hidden;
+	white-space: nowrap;
+    position: relative;
+ 
+}
+.scroll-part{
+	float: left;
+	white-space: nowrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.list-goods:first-of-type{
+    margin-top: 0;
+}
+.list-goods .goods-img{
+    margin-right: 0.2rem;
+    width: 40%;
+    height: 40%;
+}
+.list-goods .goods-img img{
+    width: 100%;
+    height: 100%;
+}
+.scroll-left{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+}
+/* 商品信息 */
+.goods-info{
+    padding: 10px;
+}
+.goods-info .goods-info-title{
+    font-size: 14px;
+    color: #767676;
+    white-space: pre-wrap;
+}
+.goods-info .goods-info-price{
+    margin-top: 4px;
+}
+.goods-info .sell-price {
+    color:#ff3e41;
+    margin-top: 6px;
+    font-size: 13px;
+}
+.goods-info .goods-info-size{
+    color:#b0b0b0;
+    font-size: 13px;
+    padding: 4px 0;
+}
+
+.goods-info .goods-info-price .price-now{
+    color: #cf170f;
+    font-size: 13px;
+    margin-right:4px;
+}
+.goods-info .goods-info-price .price-original{
+    color: #6a6a6a;
+    text-decoration: line-through;
+    font-size: 0.38rem;
+    margin-right: 0.7rem;
+}
+
+
+/* 商品删除收藏 */
+
+.scroll-part .handel-right{
+    color: #fff;
+    position: relative;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    right: -11rem;
+    top: 0;
+
+}
+.handel-right span{
+    height: 100%;
+    width: 38%;
+    text-align: center;
+    align-items: center;
+    padding: 0 0.2rem;
+    justify-content: center;
+}
+.handel-right .move-collection{
+    background-color: #ffa800;
+    white-space: pre-wrap;
+}
+.handel-right .delete{
+    background-color: #fe3a3c;
+    box-sizing: border-box;
+    width: 68%;
+}
+
+/* 通用 */
+
+/** flex */
+.ui-flex { display: -webkit-box; display: -webkit-flex; display: flex; }
+.clearfix{
+	overflow: hidden;
+}
+.colorprimary{
+    color: #ff3f3e !important;
+}
